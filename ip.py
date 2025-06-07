@@ -3,7 +3,7 @@ import struct
 import ipaddress
 
 class IP:
-    def _init_(self, enlace):
+    def __init__(self, enlace):
         self.callback = None
         self.enlace = enlace
         self.enlace.registrar_recebedor(self.__raw_recv)
